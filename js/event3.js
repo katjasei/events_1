@@ -15,7 +15,7 @@ function asTabs(node) {
     var buttonText = document.createTextNode(tab.dataset.tabname);
     button.appendChild(buttonText);
     buttonList.appendChild(button);
-    button.addEventListener('click', function() {
+    button.addEventListener('click', () => {
       selectTab(index);
     });
   });
